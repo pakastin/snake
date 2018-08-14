@@ -1,0 +1,47 @@
+html {
+  font-size: 125%;
+}
+body {
+  background-color: #f5f5f5;
+  font-family: sans-serif;
+}
+gamearea {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 .25rem .5rem -.125rem rgba(0, 0, 0, .125);
+}
+points {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: block;
+  padding: 1rem;
+  font-size: 1.25rem;
+  color: #444;
+}
+i.snakepart, i.apple {
+  position: absolute;
+  display: block;
+  font-size: 1rem;
+  width: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  background-color: #fff;
+  color: #444;
+}
+i.apple {
+  color: #666;
+  font-size: .875rem;
+}
+i.snakepart.body {
+  font-size: .75rem;
+}
+i.snakepart.body.ate {
+  font-size: 1rem;
+}
