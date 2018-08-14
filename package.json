@@ -5,11 +5,15 @@
   "main": "main.js",
   "scripts": {
     "start": "serve public",
+    "build": "rollup -c -f iife js/index.js -o public/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "serve": "~6.1.0"
+  "dependencies": {},
+  "devDependencies": {
+    "rollup": "~0.64.1",
+    "rollup-plugin-buble": "~0.19.2",
+    "rollup-plugin-butternut": "~0.1.0"
   }
 }
